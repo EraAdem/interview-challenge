@@ -1,1 +1,57 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+   background-image: url('public/weatherfinder.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #2b3746;
+  color: white;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: red;
+}
+
+/* Style the image inside the centered container, if needed */
+//.centered img {
+//  width: 100px;
+//  border-radius: 50%;
+//}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
+button {
+  color :red ;
+}
